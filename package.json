@@ -1,0 +1,21 @@
+{
+  "name": "nexdom-playwright-tests",
+  "version": "1.0.0",
+  "description": "Testes automatizados de front-end (Playwright) para o site da NEXDOM",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://nexdom.tec.br/",
+    "test:api": "playwright test --config=playwright.api.config.ts",
+    "report:api": "playwright show-report playwright-report-api"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "dotenv": "^16.4.5"
+  }
+}
